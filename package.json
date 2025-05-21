@@ -1,0 +1,56 @@
+{
+  "name": "mes-system",
+  "version": "1.0.0",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "cd web && npm run build && cd ../server && .\\mvnw.cmd clean package -DskipTests",
+    "package": "electron-builder --win",
+    "make": "npm run build && npm run package"
+  },
+  "build": {
+    "appId": "com.mes.system",
+    "productName": "MES System",
+    "directories": {
+      "output": "mesSystem"
+    },
+    "files": [    
+      "web/dist/**/*",
+      "electron/**/*",
+      "server/target/*.jar"
+    ],
+    "extraResources": [
+      {
+        "from": "jre",
+        "to": "jre",
+        "filter": ["**/*"]
+      },
+      {
+        "from": "server/target/server-0.0.1-SNAPSHOT.jar",
+        "to": "server-0.0.1-SNAPSHOT.jar"
+      },
+      {
+        "from": "electron/start-mes-server.bat",
+        "to": "start-mes-server.bat"
+      },
+      {
+        "from": "electron/stop-mes-server.bat",
+        "to": "stop-mes-server.bat"
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "web/public/favicon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "devDependencies": {
+    "electron": "25.9.8",
+    "electron-builder": "24.9.1"
+  }
+}

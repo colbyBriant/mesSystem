@@ -1,0 +1,874 @@
+2025-05-20 15:42:03.693 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 36992 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 15:42:03.696 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 15:42:03.697 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 15:42:03.722 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-20 15:42:03.723 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-20 15:42:04.240 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 15:42:04.273 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 3 JPA repository interfaces.
+2025-05-20 15:42:04.589 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 15:42:04.594 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 15:42:04.595 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 15:42:04.629 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 15:42:04.629 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 906 ms
+2025-05-20 15:42:04.709 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 15:42:04.709 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 15:42:04.709 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 15:42:04.713 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-20 15:42:04.810 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-20 15:42:04.827 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 15:42:04.873 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.026s)
+2025-05-20 15:42:04.879 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 15:42:04.879 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 15:42:04.915 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 15:42:04.940 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-05-20 15:42:05.019 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-05-20 15:42:05.070 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 15:42:05.406 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 15:42:05.411 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 15:42:05.689 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b5e6799a-2d40-4cd9-82ad-11556d37a9e1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-20 15:42:05.839 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4609af9c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35d2c931, org.springframework.security.web.context.SecurityContextPersistenceFilter@70517126, org.springframework.security.web.header.HeaderWriterFilter@660aa458, org.springframework.web.filter.CorsFilter@365558ec, org.springframework.security.web.authentication.logout.LogoutFilter@3cf69348, com.mesSystem.server.security.TokenAuthenticationFilter@1b2b53eb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fc5a904, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a7d12cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10d56a5d, org.springframework.security.web.session.SessionManagementFilter@481b65ac, org.springframework.security.web.access.ExceptionTranslationFilter@6790c285, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e11f85a]
+2025-05-20 15:42:05.939 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-20 15:42:05.959 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-20 15:42:05.964 [restartedMain] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 2.465 seconds (JVM running for 3.759)
+2025-05-20 15:42:47.743 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-20 15:42:47.743 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-20 15:42:47.744 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-05-20 16:12:10.100 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-20 16:12:10.109 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-20 16:12:10.111 [Thread-5] INFO  o.a.c.c.C.[.[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-05-20 16:12:10.118 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:12:10.121 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-20 16:12:10.124 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-20 16:12:10.225 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 36992 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 16:12:10.225 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 16:12:10.225 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 16:12:10.414 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 16:12:10.435 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2025-05-20 16:12:10.525 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 16:12:10.526 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 16:12:10.526 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 16:12:10.542 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 16:12:10.543 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 316 ms
+2025-05-20 16:12:10.572 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 16:12:10.572 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 16:12:10.573 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 16:12:10.575 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-20 16:12:10.578 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-20 16:12:10.579 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 16:12:10.585 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.002s)
+2025-05-20 16:12:10.587 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 16:12:10.587 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 16:12:10.597 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 16:12:10.602 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 16:12:10.690 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 16:12:10.691 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:12:10.891 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: df0c3629-4fe7-4bd3-a21c-62d9e866c2f2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-20 16:12:10.977 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@18981427, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68e0a06c, org.springframework.security.web.context.SecurityContextPersistenceFilter@15b0c96f, org.springframework.security.web.header.HeaderWriterFilter@628a63c3, org.springframework.web.filter.CorsFilter@43270408, org.springframework.security.web.authentication.logout.LogoutFilter@1639884c, com.mesSystem.server.security.TokenAuthenticationFilter@6b31e9b7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c9b4e78, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d3ea253, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33d0f1da, org.springframework.security.web.session.SessionManagementFilter@2a5042ee, org.springframework.security.web.access.ExceptionTranslationFilter@7d9e8796, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ee6db00]
+2025-05-20 16:12:11.027 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-20 16:12:11.038 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-20 16:12:11.041 [restartedMain] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 0.852 seconds (JVM running for 1808.763)
+2025-05-20 16:12:11.043 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-20 16:12:22.712 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-20 16:12:22.720 [Thread-7] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-20 16:12:22.725 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:12:22.726 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-20 16:12:22.728 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-05-20 16:12:22.813 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 36992 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 16:12:22.813 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 16:12:22.813 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 16:12:22.998 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 16:12:23.017 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2025-05-20 16:12:23.099 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 16:12:23.100 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 16:12:23.100 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 16:12:23.118 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 16:12:23.118 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 303 ms
+2025-05-20 16:12:23.145 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 16:12:23.145 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 16:12:23.145 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 16:12:23.146 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-05-20 16:12:23.150 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-05-20 16:12:23.150 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 16:12:23.160 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.003s)
+2025-05-20 16:12:23.163 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 16:12:23.164 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 16:12:23.176 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 16:12:23.182 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 16:12:23.249 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 16:12:23.249 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:12:23.420 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b94a6f76-664c-4e4a-b988-438df6a6f81a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-20 16:12:23.497 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@546656ec, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21ee9531, org.springframework.security.web.context.SecurityContextPersistenceFilter@654daf03, org.springframework.security.web.header.HeaderWriterFilter@451a6dcd, org.springframework.web.filter.CorsFilter@148a5f82, org.springframework.security.web.authentication.logout.LogoutFilter@159b27b5, com.mesSystem.server.security.TokenAuthenticationFilter@64a50ed2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@470bf94e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51699067, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@292f59c, org.springframework.security.web.session.SessionManagementFilter@1f9af40, org.springframework.security.web.access.ExceptionTranslationFilter@31927eca, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ff9f4dd]
+2025-05-20 16:12:23.542 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-20 16:12:23.555 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-20 16:12:23.559 [restartedMain] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 0.774 seconds (JVM running for 1821.28)
+2025-05-20 16:12:23.561 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-20 16:12:32.141 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-20 16:12:32.160 [Thread-11] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-20 16:12:32.165 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:12:32.166 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-05-20 16:12:32.169 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-05-20 16:12:32.244 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 36992 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 16:12:32.244 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 16:12:32.245 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 16:12:32.425 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 16:12:32.443 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2025-05-20 16:12:32.524 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 16:12:32.525 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 16:12:32.525 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 16:12:32.542 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 16:12:32.543 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 297 ms
+2025-05-20 16:12:32.571 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 16:12:32.571 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 16:12:32.571 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 16:12:32.573 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2025-05-20 16:12:32.576 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2025-05-20 16:12:32.576 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 16:12:32.582 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.002s)
+2025-05-20 16:12:32.585 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 16:12:32.585 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 16:12:32.594 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 16:12:32.596 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 16:12:32.665 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 16:12:32.666 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:12:32.837 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 091c889d-b719-49f5-813f-ec46b437f89e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-20 16:12:32.910 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f23af3e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6dbb246a, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c1bab28, org.springframework.security.web.header.HeaderWriterFilter@345e227b, org.springframework.web.filter.CorsFilter@4303ae90, org.springframework.security.web.authentication.logout.LogoutFilter@54eeafee, com.mesSystem.server.security.TokenAuthenticationFilter@26d76d19, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1150ebd2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54d84e79, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@745f7ca2, org.springframework.security.web.session.SessionManagementFilter@11121cd6, org.springframework.security.web.access.ExceptionTranslationFilter@36ef7d24, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6e216213]
+2025-05-20 16:12:32.958 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-20 16:12:32.969 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-20 16:12:32.973 [restartedMain] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 0.755 seconds (JVM running for 1830.694)
+2025-05-20 16:12:32.975 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-20 16:13:57.268 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-20 16:13:57.280 [Thread-15] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-20 16:13:57.284 [Thread-15] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:13:57.284 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-05-20 16:13:57.287 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-05-20 16:13:57.377 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 36992 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 16:13:57.377 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 16:13:57.377 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 16:13:57.568 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 16:13:57.590 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2025-05-20 16:13:57.671 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 16:13:57.671 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 16:13:57.671 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 16:13:57.685 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 16:13:57.685 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 306 ms
+2025-05-20 16:13:57.715 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 16:13:57.715 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 16:13:57.715 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 16:13:57.717 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2025-05-20 16:13:57.720 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2025-05-20 16:13:57.720 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 16:13:57.728 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.003s)
+2025-05-20 16:13:57.731 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 16:13:57.732 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 16:13:57.749 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 16:13:57.752 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 16:13:57.795 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 16:13:57.795 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:13:57.962 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 256a49aa-d02d-4791-b7b4-a846e919167f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-20 16:13:58.023 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4ee33c78, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7461bb3d, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f82cfdf, org.springframework.security.web.header.HeaderWriterFilter@24c15494, org.springframework.web.filter.CorsFilter@51657f9c, org.springframework.security.web.authentication.logout.LogoutFilter@748cf865, com.mesSystem.server.security.TokenAuthenticationFilter@547f8609, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a349674, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@647f0e52, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3286002, org.springframework.security.web.session.SessionManagementFilter@67c5cb4e, org.springframework.security.web.access.ExceptionTranslationFilter@74ae23b8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4bb9c4d5]
+2025-05-20 16:13:58.062 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-20 16:13:58.076 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-20 16:13:58.079 [restartedMain] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 0.726 seconds (JVM running for 1915.798)
+2025-05-20 16:13:58.080 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-20 16:14:00.625 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:14:00.626 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025-05-20 16:14:00.629 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2025-05-20 16:14:05.769 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 36252 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 16:14:05.769 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 16:14:05.770 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 16:14:05.795 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-20 16:14:05.795 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-20 16:14:06.135 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 16:14:06.169 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2025-05-20 16:14:06.487 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 16:14:06.492 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 16:14:06.493 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 16:14:06.528 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 16:14:06.528 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 733 ms
+2025-05-20 16:14:06.612 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 16:14:06.612 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 16:14:06.612 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 16:14:06.626 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-20 16:14:06.697 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-20 16:14:06.714 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 16:14:06.737 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.010s)
+2025-05-20 16:14:06.743 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 16:14:06.743 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 16:14:06.781 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 16:14:06.805 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-05-20 16:14:06.893 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-05-20 16:14:06.950 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 16:14:07.298 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 16:14:07.303 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:14:07.564 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4b46d69f-b87e-45a6-b30c-d37fb670ebc6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-20 16:14:07.714 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@123abb39, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a806a1b, org.springframework.security.web.context.SecurityContextPersistenceFilter@3aedca0a, org.springframework.security.web.header.HeaderWriterFilter@22b0859d, org.springframework.web.filter.CorsFilter@1553c4d0, org.springframework.security.web.authentication.logout.LogoutFilter@6102e63a, com.mesSystem.server.security.TokenAuthenticationFilter@6ae2a9bc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@648c6ff8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@567b9303, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2dc624aa, org.springframework.security.web.session.SessionManagementFilter@1a60fc25, org.springframework.security.web.access.ExceptionTranslationFilter@7d60c3a4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@65547a33]
+2025-05-20 16:14:07.820 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-20 16:14:07.842 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-20 16:14:07.847 [restartedMain] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 2.267 seconds (JVM running for 2.738)
+2025-05-20 16:15:56.307 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-05-20 16:15:56.317 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-20 16:15:56.321 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:15:56.323 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-20 16:15:56.327 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-20 16:15:56.365 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 36252 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 16:15:56.365 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 16:15:56.365 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 16:15:56.473 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 16:15:56.484 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2025-05-20 16:15:56.532 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 16:15:56.532 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 16:15:56.532 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 16:15:56.540 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 16:15:56.540 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 174 ms
+2025-05-20 16:15:56.557 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 16:15:56.557 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 16:15:56.557 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 16:15:56.558 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-20 16:15:56.560 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-20 16:15:56.561 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 16:15:56.569 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.003s)
+2025-05-20 16:15:56.573 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 16:15:56.573 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 16:15:56.583 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 16:15:56.585 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 16:15:56.618 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 16:15:56.619 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:15:56.715 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 87ab3f6e-7ad0-4716-bb4c-c975c3a35267
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-20 16:15:56.749 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@91f6356, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a1ae869, org.springframework.security.web.context.SecurityContextPersistenceFilter@51a654f8, org.springframework.security.web.header.HeaderWriterFilter@51fc29f3, org.springframework.web.filter.CorsFilter@3f26f293, org.springframework.security.web.authentication.logout.LogoutFilter@12ea6983, com.mesSystem.server.security.TokenAuthenticationFilter@5dfd5b7c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d51d782, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d52cc6a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f8a9646, org.springframework.security.web.session.SessionManagementFilter@65ad3f69, org.springframework.security.web.access.ExceptionTranslationFilter@687e82ac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6981670c]
+2025-05-20 16:15:56.775 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-20 16:15:56.780 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-20 16:15:56.784 [restartedMain] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 0.434 seconds (JVM running for 111.672)
+2025-05-20 16:15:56.785 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-20 16:16:03.253 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-05-20 16:16:03.259 [Thread-7] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-20 16:16:03.262 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:16:03.262 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-20 16:16:03.264 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-05-20 16:16:03.307 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 36252 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 16:16:03.307 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 16:16:03.307 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 16:16:03.405 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 16:16:03.414 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2025-05-20 16:16:03.457 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 16:16:03.457 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 16:16:03.457 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 16:16:03.464 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 16:16:03.464 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 154 ms
+2025-05-20 16:16:03.478 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 16:16:03.478 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 16:16:03.478 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 16:16:03.480 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-05-20 16:16:03.483 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-05-20 16:16:03.483 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 16:16:03.491 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.002s)
+2025-05-20 16:16:03.494 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 16:16:03.494 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 16:16:03.503 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 16:16:03.506 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 16:16:03.531 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 16:16:03.531 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:16:03.610 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: ded2df6b-95c4-4054-a56c-41216e70fce8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-20 16:16:03.642 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2105bc74, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c09a727, org.springframework.security.web.context.SecurityContextPersistenceFilter@45ea80ea, org.springframework.security.web.header.HeaderWriterFilter@38130768, org.springframework.web.filter.CorsFilter@714c7034, org.springframework.security.web.authentication.logout.LogoutFilter@5a631f4e, com.mesSystem.server.security.TokenAuthenticationFilter@781ea14f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ad31405, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a5b7470, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74f45424, org.springframework.security.web.session.SessionManagementFilter@729c792d, org.springframework.security.web.access.ExceptionTranslationFilter@39d0dac8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60fd34d6]
+2025-05-20 16:16:03.659 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-20 16:16:03.664 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-20 16:16:03.666 [restartedMain] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 0.37 seconds (JVM running for 118.554)
+2025-05-20 16:16:03.667 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-20 16:16:08.107 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-05-20 16:16:08.113 [Thread-11] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-20 16:16:08.115 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:16:08.116 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-05-20 16:16:08.117 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-05-20 16:16:08.157 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 36252 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 16:16:08.157 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 16:16:08.157 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 16:16:08.239 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 16:16:08.249 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2025-05-20 16:16:08.287 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 16:16:08.287 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 16:16:08.287 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 16:16:08.295 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 16:16:08.295 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 137 ms
+2025-05-20 16:16:08.310 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 16:16:08.310 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 16:16:08.310 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 16:16:08.311 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2025-05-20 16:16:08.313 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2025-05-20 16:16:08.313 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 16:16:08.321 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.003s)
+2025-05-20 16:16:08.325 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 16:16:08.325 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 16:16:08.331 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 16:16:08.333 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 16:16:08.358 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 16:16:08.358 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:16:08.440 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 88a9dd7e-e50c-4066-95e2-33f799eecb0d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-20 16:16:08.472 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@20e6bf33, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37c2099d, org.springframework.security.web.context.SecurityContextPersistenceFilter@31c46a04, org.springframework.security.web.header.HeaderWriterFilter@1b930899, org.springframework.web.filter.CorsFilter@3d3e80ba, org.springframework.security.web.authentication.logout.LogoutFilter@4b5479a4, com.mesSystem.server.security.TokenAuthenticationFilter@194120e8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62e8886f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@613c936b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c4b0bd4, org.springframework.security.web.session.SessionManagementFilter@513d3d79, org.springframework.security.web.access.ExceptionTranslationFilter@7da5cb58, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d7b2419]
+2025-05-20 16:16:08.498 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-20 16:16:08.506 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-20 16:16:08.508 [restartedMain] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 0.363 seconds (JVM running for 123.396)
+2025-05-20 16:16:08.509 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-20 16:16:10.096 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-20 16:16:10.096 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-20 16:16:10.096 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-05-20 16:23:45.347 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-05-20 16:23:45.356 [Thread-15] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-20 16:23:45.356 [Thread-15] INFO  o.a.c.c.C.[.[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-05-20 16:23:45.360 [Thread-15] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:23:45.361 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-05-20 16:23:45.363 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-05-20 16:23:45.460 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 36252 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 16:23:45.460 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 16:23:45.460 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 16:23:45.675 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 16:23:45.695 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2025-05-20 16:23:45.784 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 16:23:45.785 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 16:23:45.785 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 16:23:45.801 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 16:23:45.802 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 340 ms
+2025-05-20 16:23:45.831 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 16:23:45.831 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 16:23:45.831 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 16:23:45.832 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2025-05-20 16:23:45.836 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2025-05-20 16:23:45.836 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 16:23:45.841 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.002s)
+2025-05-20 16:23:45.843 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 16:23:45.843 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 16:23:45.852 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 16:23:45.854 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 16:23:45.932 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 16:23:45.933 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 16:23:46.143 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: cabedc22-6243-4656-bb86-0c0c03a4d386
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-20 16:23:46.229 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@613504ea, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41128c84, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e95f550, org.springframework.security.web.header.HeaderWriterFilter@77be1e7e, org.springframework.web.filter.CorsFilter@53f61681, org.springframework.security.web.authentication.logout.LogoutFilter@155a8182, com.mesSystem.server.security.TokenAuthenticationFilter@21aa44ea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f3837c5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78f28bb2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@68f11661, org.springframework.security.web.session.SessionManagementFilter@75c32730, org.springframework.security.web.access.ExceptionTranslationFilter@4ba35bfc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1dddfe73]
+2025-05-20 16:23:46.276 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-20 16:23:46.288 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-20 16:23:46.292 [restartedMain] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 0.862 seconds (JVM running for 581.168)
+2025-05-20 16:23:46.293 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-20 17:24:05.787 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-20 17:24:05.802 [Thread-19] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-20 17:24:05.805 [Thread-19] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 17:24:05.806 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025-05-20 17:24:05.808 [Thread-19] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2025-05-20 17:24:05.904 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 36252 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 17:24:05.904 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 17:24:05.904 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 17:24:06.119 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 17:24:06.138 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2025-05-20 17:24:06.236 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 17:24:06.236 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 17:24:06.236 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 17:24:06.251 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 17:24:06.251 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 345 ms
+2025-05-20 17:24:06.282 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 17:24:06.282 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 17:24:06.282 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 17:24:06.283 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2025-05-20 17:24:06.286 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2025-05-20 17:24:06.287 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 17:24:06.293 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.002s)
+2025-05-20 17:24:06.301 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 17:24:06.301 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 17:24:06.323 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 17:24:06.329 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 17:24:06.411 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 17:24:06.411 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 17:24:06.698 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 653a2ac8-41b0-44aa-87a8-6f261119007f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-20 17:24:06.764 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5e961cc5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f3c3f55, org.springframework.security.web.context.SecurityContextPersistenceFilter@185d81f6, org.springframework.security.web.header.HeaderWriterFilter@674409ab, org.springframework.web.filter.CorsFilter@4b57def9, org.springframework.security.web.authentication.logout.LogoutFilter@2ff6786a, com.mesSystem.server.security.TokenAuthenticationFilter@59cdb08d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73d11ac6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@341f5c46, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3753ef45, org.springframework.security.web.session.SessionManagementFilter@76f33a68, org.springframework.security.web.access.ExceptionTranslationFilter@59dcf54, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d33e771]
+2025-05-20 17:24:06.811 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-20 17:24:06.822 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-20 17:24:06.825 [restartedMain] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 0.954 seconds (JVM running for 4201.652)
+2025-05-20 17:24:06.826 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-20 17:26:56.649 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2025-05-20 17:26:56.659 [Thread-23] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-20 17:26:56.662 [Thread-23] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 17:26:56.663 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2025-05-20 17:26:56.664 [Thread-23] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2025-05-20 17:26:56.744 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 36252 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 17:26:56.745 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 17:26:56.745 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 17:26:56.905 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 17:26:56.923 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 3 JPA repository interfaces.
+2025-05-20 17:26:56.998 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 17:26:56.999 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 17:26:56.999 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 17:26:57.014 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 17:26:57.014 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 267 ms
+2025-05-20 17:26:57.042 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 17:26:57.043 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 17:26:57.043 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 17:26:57.043 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2025-05-20 17:26:57.046 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2025-05-20 17:26:57.047 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 17:26:57.052 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.002s)
+2025-05-20 17:26:57.056 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 17:26:57.056 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 17:26:57.070 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 17:26:57.074 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 17:26:57.126 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 17:26:57.126 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 17:26:57.199 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'analysisReportController' defined in file [D:\software\myworkspace_projects\mes-System\server\target\classes\com\mesSystem\server\controller\AnalysisReportController.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mesSystem.server.service.PatientService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-05-20 17:26:57.199 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 17:26:57.199 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2025-05-20 17:26:57.201 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2025-05-20 17:26:57.201 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-20 17:26:57.205 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-05-20 17:26:57.226 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.mesSystem.server.controller.AnalysisReportController required a bean of type 'com.mesSystem.server.service.PatientService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mesSystem.server.service.PatientService' in your configuration.
+
+2025-05-20 17:27:40.268 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 36252 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 17:27:40.268 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 17:27:40.268 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 17:27:40.367 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 17:27:40.376 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2025-05-20 17:27:40.418 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 17:27:40.418 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 17:27:40.418 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 17:27:40.427 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 17:27:40.427 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 158 ms
+2025-05-20 17:27:40.441 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 17:27:40.441 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 17:27:40.441 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 17:27:40.442 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2025-05-20 17:27:40.444 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2025-05-20 17:27:40.444 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 17:27:40.450 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.002s)
+2025-05-20 17:27:40.452 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 17:27:40.452 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 17:27:40.461 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 17:27:40.462 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 17:27:40.499 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 17:27:40.499 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 17:27:40.537 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'analysisReportController' defined in file [D:\software\myworkspace_projects\mes-System\server\target\classes\com\mesSystem\server\controller\AnalysisReportController.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mesSystem.server.service.PatientService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-05-20 17:27:40.537 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 17:27:40.538 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+2025-05-20 17:27:40.538 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2025-05-20 17:27:40.538 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-20 17:27:40.541 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-05-20 17:27:40.544 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.mesSystem.server.controller.AnalysisReportController required a bean of type 'com.mesSystem.server.service.PatientService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mesSystem.server.service.PatientService' in your configuration.
+
+2025-05-20 17:27:49.256 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 24996 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 17:27:49.256 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 17:27:49.257 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 17:27:49.279 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-20 17:27:49.279 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-20 17:27:49.623 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 17:27:49.658 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2025-05-20 17:27:49.985 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 17:27:49.990 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 17:27:49.991 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 17:27:50.025 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 17:27:50.026 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 747 ms
+2025-05-20 17:27:50.107 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 17:27:50.108 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 17:27:50.108 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 17:27:50.112 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-20 17:27:50.186 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-20 17:27:50.207 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 17:27:50.232 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.011s)
+2025-05-20 17:27:50.239 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 17:27:50.239 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 17:27:50.280 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 17:27:50.306 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-05-20 17:27:50.393 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-05-20 17:27:50.453 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 17:27:50.801 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 17:27:50.806 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 17:27:51.068 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: ea06b6b9-0203-42ea-8f7f-c669d5fd1fc1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-20 17:27:51.221 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@eab6129, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b005bf9, org.springframework.security.web.context.SecurityContextPersistenceFilter@7556e2a6, org.springframework.security.web.header.HeaderWriterFilter@2d88110c, org.springframework.web.filter.CorsFilter@5dd6009a, org.springframework.security.web.authentication.logout.LogoutFilter@21543d59, com.mesSystem.server.security.TokenAuthenticationFilter@340d857f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6479f7b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b1b3bda, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61fa08fe, org.springframework.security.web.session.SessionManagementFilter@12734627, org.springframework.security.web.access.ExceptionTranslationFilter@76298949, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45bcc846]
+2025-05-20 17:27:51.322 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-20 17:27:51.345 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-20 17:27:51.351 [restartedMain] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 2.286 seconds (JVM running for 2.674)
+2025-05-20 17:27:55.227 [http-nio-8888-exec-2] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-20 17:27:55.227 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-20 17:27:55.228 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-05-20 17:28:01.314 [http-nio-8888-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.mesSystem.server.exception.BusinessException: 用户名或密码错误]
+2025-05-20 17:38:39.765 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-05-20 17:38:39.790 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-20 17:38:39.790 [Thread-5] INFO  o.a.c.c.C.[.[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-05-20 17:38:39.798 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 17:38:39.803 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-20 17:38:39.813 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-20 17:38:39.920 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 24996 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 17:38:39.920 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 17:38:39.921 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 17:38:40.128 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 17:38:40.150 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2025-05-20 17:38:40.258 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 17:38:40.258 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 17:38:40.259 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 17:38:40.274 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 17:38:40.274 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 350 ms
+2025-05-20 17:38:40.303 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 17:38:40.303 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 17:38:40.303 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 17:38:40.304 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-05-20 17:38:40.308 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-05-20 17:38:40.310 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 17:38:40.324 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.004s)
+2025-05-20 17:38:40.332 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 17:38:40.333 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 17:38:40.360 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 17:38:40.371 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 17:38:40.463 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 17:38:40.463 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 17:38:40.655 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6c0d9930-f338-46ec-93e4-136f3b352ecd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-20 17:38:40.719 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@70ea22e4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28351b6b, org.springframework.security.web.context.SecurityContextPersistenceFilter@48018586, org.springframework.security.web.header.HeaderWriterFilter@423fed34, org.springframework.web.filter.CorsFilter@6ff2b52a, org.springframework.security.web.authentication.logout.LogoutFilter@3d5ceff8, com.mesSystem.server.security.TokenAuthenticationFilter@50113a61, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ba75590, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16cc4b9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@714ddf85, org.springframework.security.web.session.SessionManagementFilter@192ed70e, org.springframework.security.web.access.ExceptionTranslationFilter@49a54c0a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@436f866b]
+2025-05-20 17:38:40.764 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-20 17:38:40.788 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-20 17:38:40.793 [restartedMain] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 0.899 seconds (JVM running for 652.112)
+2025-05-20 17:38:40.795 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-20 17:43:36.389 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-05-20 17:43:36.398 [Thread-7] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-20 17:43:36.403 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 17:43:36.404 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-05-20 17:43:36.409 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-05-20 17:43:36.538 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 24996 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 17:43:36.538 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 17:43:36.538 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 17:43:36.700 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 17:43:36.718 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 3 JPA repository interfaces.
+2025-05-20 17:43:36.804 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 17:43:36.804 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 17:43:36.805 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 17:43:36.825 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 17:43:36.825 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 284 ms
+2025-05-20 17:43:36.855 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 17:43:36.855 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 17:43:36.855 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 17:43:36.856 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-05-20 17:43:36.863 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-05-20 17:43:36.863 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 17:43:36.869 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.002s)
+2025-05-20 17:43:36.871 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 17:43:36.872 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 17:43:36.879 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 17:43:36.882 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 17:43:37.019 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 17:43:37.019 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 17:43:37.199 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d2718879-8fed-457c-9916-b1497e2423ec
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-20 17:43:37.275 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@26666edf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7570f929, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d71dbe, org.springframework.security.web.header.HeaderWriterFilter@3f48c7c4, org.springframework.web.filter.CorsFilter@69766adf, org.springframework.security.web.authentication.logout.LogoutFilter@752f7cf5, com.mesSystem.server.security.TokenAuthenticationFilter@4d4cc180, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7cc02364, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54faddf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58c94e60, org.springframework.security.web.session.SessionManagementFilter@4001b560, org.springframework.security.web.access.ExceptionTranslationFilter@36f4020, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6398f0c9]
+2025-05-20 17:43:37.317 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-20 17:43:37.328 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-20 17:43:37.333 [restartedMain] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 0.826 seconds (JVM running for 948.65)
+2025-05-20 17:43:37.334 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-20 17:59:54.517 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-20 17:59:54.517 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-20 17:59:54.518 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-05-20 18:05:50.539 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-05-20 18:05:50.549 [Thread-11] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-20 18:05:50.550 [Thread-11] INFO  o.a.c.c.C.[.[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-05-20 18:05:50.557 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 18:05:50.557 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-05-20 18:05:50.559 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-05-20 18:05:50.644 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 24996 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 18:05:50.644 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 18:05:50.644 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 18:05:50.869 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 18:05:50.887 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2025-05-20 18:05:50.975 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 18:05:50.976 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 18:05:50.976 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 18:05:50.994 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 18:05:50.994 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 348 ms
+2025-05-20 18:05:51.023 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 18:05:51.023 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 18:05:51.023 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 18:05:51.024 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2025-05-20 18:05:51.032 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2025-05-20 18:05:51.033 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 18:05:51.040 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.002s)
+2025-05-20 18:05:51.044 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 18:05:51.044 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 18:05:51.058 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 18:05:51.062 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 18:05:51.140 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 18:05:51.140 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 18:05:51.363 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: ec32bdc8-e396-410a-bc79-4516ae831960
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-20 18:05:51.446 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@25e03c35, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57369c43, org.springframework.security.web.context.SecurityContextPersistenceFilter@11d7b8a8, org.springframework.security.web.header.HeaderWriterFilter@4b35792c, org.springframework.web.filter.CorsFilter@7cbf2181, org.springframework.security.web.authentication.logout.LogoutFilter@27aa05ef, com.mesSystem.server.security.TokenAuthenticationFilter@eea01d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62eeac18, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f24570, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a4f95af, org.springframework.security.web.session.SessionManagementFilter@5e8aecb7, org.springframework.security.web.access.ExceptionTranslationFilter@3428fc46, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@792160cd]
+2025-05-20 18:05:51.498 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-20 18:05:51.509 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-20 18:05:51.512 [restartedMain] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 0.897 seconds (JVM running for 2282.825)
+2025-05-20 18:05:51.514 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-20 18:08:55.471 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-20 18:08:55.471 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-20 18:08:55.472 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-05-20 19:43:53.499 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 3 deletions, 0 modifications)
+2025-05-20 19:43:53.514 [Thread-15] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-20 19:43:53.515 [Thread-15] INFO  o.a.c.c.C.[.[localhost].[/api] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-05-20 19:43:53.521 [Thread-15] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 19:43:53.521 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-05-20 19:43:53.524 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-05-20 19:43:53.604 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 24996 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 19:43:53.604 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 19:43:53.604 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 19:43:53.830 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 19:43:53.852 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2025-05-20 19:43:53.954 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 19:43:53.954 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 19:43:53.955 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 19:43:53.972 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 19:43:53.972 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 364 ms
+2025-05-20 19:43:54.004 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 19:43:54.004 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 19:43:54.004 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 19:43:54.006 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2025-05-20 19:43:54.010 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2025-05-20 19:43:54.011 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 19:43:54.019 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.003s)
+2025-05-20 19:43:54.023 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 19:43:54.023 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 19:43:54.040 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 19:43:54.045 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 19:43:54.094 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 19:43:54.094 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 19:43:54.230 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'analysisReportController' defined in file [D:\software\myworkspace_projects\mes-System\server\target\classes\com\mesSystem\server\controller\AnalysisReportController.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mesSystem.server.service.PatientService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-05-20 19:43:54.230 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 19:43:54.230 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025-05-20 19:43:54.232 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2025-05-20 19:43:54.233 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-20 19:43:54.240 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-05-20 19:43:54.284 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.mesSystem.server.controller.AnalysisReportController required a bean of type 'com.mesSystem.server.service.PatientService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mesSystem.server.service.PatientService' in your configuration.
+
+2025-05-20 19:43:57.802 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 24996 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-20 19:43:57.802 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 19:43:57.802 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 19:43:57.989 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 19:43:58.013 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2025-05-20 19:43:58.094 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 19:43:58.094 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 19:43:58.094 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 19:43:58.111 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 19:43:58.111 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 307 ms
+2025-05-20 19:43:58.146 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 19:43:58.146 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 19:43:58.146 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 19:43:58.147 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2025-05-20 19:43:58.150 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2025-05-20 19:43:58.150 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 19:43:58.157 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.003s)
+2025-05-20 19:43:58.160 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 19:43:58.161 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 19:43:58.174 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 19:43:58.179 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 19:43:58.224 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 19:43:58.224 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 19:43:58.402 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8e79057e-8eca-438f-96fe-1c159920e371
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-20 19:43:58.477 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6be93dc3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64a122f1, org.springframework.security.web.context.SecurityContextPersistenceFilter@6014996a, org.springframework.security.web.header.HeaderWriterFilter@5380f78e, org.springframework.web.filter.CorsFilter@6dfb3d7d, org.springframework.security.web.authentication.logout.LogoutFilter@2e6aec2d, com.mesSystem.server.security.TokenAuthenticationFilter@5e0ae055, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c8e4ca7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5866f63f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c2fc972, org.springframework.security.web.session.SessionManagementFilter@4c5fdf4c, org.springframework.security.web.access.ExceptionTranslationFilter@25892fe0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2163a85]
+2025-05-20 19:43:58.529 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-20 19:43:58.542 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-20 19:43:58.546 [restartedMain] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 0.765 seconds (JVM running for 8169.556)
+2025-05-20 19:43:58.546 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-05-20 19:51:24.305 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-20 19:51:24.305 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-20 19:51:24.306 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-05-20 19:53:04.496 [http-nio-8888-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.mesSystem.server.dto.PatientDTO> com.mesSystem.server.controller.PatientController.createPatient(com.mesSystem.server.dto.PatientDTO): [Field error in object 'patientDTO' on field 'phone': rejected value []; codes [Pattern.patientDTO.phone,Pattern.phone,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [patientDTO.phone,phone]; arguments []; default message [phone],[Ljavax.validation.constraints.Pattern$Flag;@4a5d8d2b,^1[3-9]\d{9}$]; default message [手机号格式不正确]] ]
+2025-05-20 19:53:33.703 [http-nio-8888-exec-5] INFO  o.h.e.j.b.internal.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
+2025-05-20 19:53:33.703 [http-nio-8888-exec-5] ERROR o.h.e.j.batch.internal.BatchingBatch - HHH000315: Exception executing batch [java.sql.BatchUpdateException: Duplicate entry '36012120000104751X' for key 'patients.id_card'], SQL: insert into patients (address, age, card_number, create_time, gender, id_card, medical_number, name, phone, update_time, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-05-20 19:53:33.705 [http-nio-8888-exec-5] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2025-05-20 19:53:33.705 [http-nio-8888-exec-5] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Duplicate entry '36012120000104751X' for key 'patients.id_card'
+2025-05-20 19:53:33.711 [http-nio-8888-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute batch; SQL [insert into patients (address, age, card_number, create_time, gender, id_card, medical_number, name, phone, update_time, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]; constraint [patients.id_card]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute batch]
+2025-05-20 19:57:20.414 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 19:57:20.414 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2025-05-20 19:57:20.415 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2025-05-20 20:03:56.746 [main] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication v0.0.1-SNAPSHOT using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 22048 (D:\MES\MES System\resources\server-0.0.1-SNAPSHOT.jar started by tao in D:\MES\MES System\resources)
+2025-05-20 20:03:56.748 [main] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-20 20:03:56.748 [main] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-20 20:03:57.278 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-20 20:03:57.323 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 3 JPA repository interfaces.
+2025-05-20 20:03:57.916 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-20 20:03:57.923 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-20 20:03:57.923 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-20 20:03:57.989 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-20 20:03:57.990 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1206 ms
+2025-05-20 20:03:58.185 [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-20 20:03:58.185 [main] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-20 20:03:58.185 [main] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-20 20:03:58.201 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-20 20:03:58.320 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-20 20:03:58.344 [main] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-20 20:03:58.380 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.018s)
+2025-05-20 20:03:58.387 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-20 20:03:58.388 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-20 20:03:58.451 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-20 20:03:58.495 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-05-20 20:03:58.634 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-05-20 20:03:58.711 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-20 20:03:59.172 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-20 20:03:59.180 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-20 20:03:59.637 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 20205122-efce-4479-bb01-6cec0a483f72
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-20 20:03:59.922 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@630b6190, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@532e27ab, org.springframework.security.web.context.SecurityContextPersistenceFilter@26bbe604, org.springframework.security.web.header.HeaderWriterFilter@4375b013, org.springframework.web.filter.CorsFilter@1cdc1bbc, org.springframework.security.web.authentication.logout.LogoutFilter@4aa21f9d, com.mesSystem.server.security.TokenAuthenticationFilter@5f95f1e1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c98781a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f736a16, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@672a1c62, org.springframework.security.web.session.SessionManagementFilter@4f5b08d, org.springframework.security.web.access.ExceptionTranslationFilter@797c3c3b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f2de715]
+2025-05-20 20:04:00.077 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-20 20:04:00.082 [main] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 3.733 seconds (JVM running for 4.261)
+2025-05-20 20:04:03.348 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-20 20:04:03.348 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-20 20:04:03.349 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-05-21 10:46:31.654 [restartedMain] INFO  c.m.server.MesSystemApplication - Starting MesSystemApplication using Java 17.0.13 on DESKTOP-6UDVEF1 with PID 32612 (D:\software\myworkspace_projects\mes-System\server\target\classes started by tao in D:\software\myworkspace_projects\mes-System\server)
+2025-05-21 10:46:31.655 [restartedMain] DEBUG c.m.server.MesSystemApplication - Running with Spring Boot v2.7.9, Spring v5.3.25
+2025-05-21 10:46:31.655 [restartedMain] INFO  c.m.server.MesSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-21 10:46:31.684 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-21 10:46:31.684 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-21 10:46:32.303 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-21 10:46:32.337 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 3 JPA repository interfaces.
+2025-05-21 10:46:32.656 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-05-21 10:46:32.662 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-21 10:46:32.663 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2025-05-21 10:46:32.700 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-05-21 10:46:32.700 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1016 ms
+2025-05-21 10:46:32.778 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 8.5.13 by Redgate
+2025-05-21 10:46:32.778 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2025-05-21 10:46:32.778 [restartedMain] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-21 10:46:32.782 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-21 10:46:32.885 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-21 10:46:32.905 [restartedMain] INFO  o.f.c.i.d.base.BaseDatabaseType - Database: jdbc:mysql://localhost:3306/mes_system (MySQL 8.0)
+2025-05-21 10:46:32.973 [restartedMain] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.035s)
+2025-05-21 10:46:32.979 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `mes_system`: 1
+2025-05-21 10:46:32.980 [restartedMain] INFO  o.f.core.internal.command.DbMigrate - Schema `mes_system` is up to date. No migration necessary.
+2025-05-21 10:46:33.017 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-21 10:46:33.041 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-05-21 10:46:33.120 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-05-21 10:46:33.174 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-05-21 10:46:33.539 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-05-21 10:46:33.544 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-21 10:46:33.812 [restartedMain] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4bd331fe-59a7-4473-a788-53a8a3ce2be0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-21 10:46:33.961 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@222b8ce0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ab3b4ce, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a9cde74, org.springframework.security.web.header.HeaderWriterFilter@f9d419d, org.springframework.web.filter.CorsFilter@2a244a7f, org.springframework.security.web.authentication.logout.LogoutFilter@64b1b672, com.mesSystem.server.security.TokenAuthenticationFilter@7844a9c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71150505, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@205293fc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79b69a00, org.springframework.security.web.session.SessionManagementFilter@6a029ecd, org.springframework.security.web.access.ExceptionTranslationFilter@1345fd0b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2647dcdc]
+2025-05-21 10:46:34.062 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-05-21 10:46:34.082 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path '/api'
+2025-05-21 10:46:34.087 [restartedMain] INFO  c.m.server.MesSystemApplication - Started MesSystemApplication in 2.644 seconds (JVM running for 3.832)
+2025-05-21 10:47:31.997 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-21 10:47:31.997 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-21 10:47:31.999 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
